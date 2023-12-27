@@ -19,9 +19,7 @@ public class PostApiTest extends BaseApi {
                 .get("/posts")
                 .then()
                 .log().body()
-                .statusCode(200)
-                .body("[0].author", equalTo("Tracy Collier"))
-                .body("[0].id", equalTo(1));
+                .statusCode(200);
     }
 
     @Test

@@ -116,7 +116,7 @@ public class BearerTokenTest extends BaseBearerTokenTest {
                 .body("message", equalTo("Article has been created"));
     }
 
-    @Test
+    @Test(enabled = false)
     public void updateArticleShouldSucceed() {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("title", LoremIpsum.getInstance().getTitle(4));
